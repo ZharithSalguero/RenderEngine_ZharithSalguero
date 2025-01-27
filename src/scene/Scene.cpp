@@ -115,14 +115,14 @@ void Scene::resetFrameBuffer(const int width, const int height) {
 
 	// TODO: Set the pixelSize value to be responsive to the screen properties: width and height
 	const int pixelSize = height/16;
-	const int pixelRomSum = pixelSize * 16;
+	const int pixelRumSum = pixelSize * 16;
 
 	// TODO: Place the FrameBuffer in the middle of the screen with the max possible size
 	SDL_Rect frameBufferRect{
-		.x = (width - pixelSize * 16)/2,
-		.y = (height - pixelSize * 16)/2,
-		.w = pixelSize * 16,
-		.h = pixelSize * 16,
+		.x = (width - pixelRumSum)/2,
+		.y = (height - pixelRumSum)/2,
+		.w = pixelRumSum,
+		.h = pixelRumSum,
 
 	};
 
